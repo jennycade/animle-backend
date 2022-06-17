@@ -1,0 +1,34 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const GameSchema = new Schema({
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true,
+  },
+  target: {
+    type: Schema.Types.ObjectId,
+    ref: 'Target',
+    required: true,
+  },
+  won: {
+    type: Boolean,
+    required: true,
+  },
+  guesses: [
+    {
+      animal: {
+        type: Schema.Types.ObjectId,
+        ref: 'Animal',
+        required: true,
+      },
+      yearsSinceLastCommonAncestor: {
+        type: Number,
+        min: 0,
+      }
+    }
+  ],
+});
+
+module.eports = mongoose.model('Game', GameSchema);
