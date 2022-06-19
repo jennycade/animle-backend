@@ -1,0 +1,6 @@
+nodeName, years, parent
+root, 0, null
+Porifera, 850.91200000, root
+2, 0, root
+3, 171.10400000, 2
+Ctenophora, 850.91200000, 2

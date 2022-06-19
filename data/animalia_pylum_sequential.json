@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Porifera",
+    "years": 850912000,
+    "parent": "root"
+  },
+  {
+    "name": "Hemichordata",
+    "years": 596358000,
+    "parent": "9"
+  },
+  {
+    "name": "Echinodermata",
+    "years": 596358000,
+    "parent": "9"
+  },
+  {
+    "name": "9",
+    "years": 0,
+    "parent": "14"
+  },
+  {
+    "name": "Xenacoelomorpha",
+    "years": 596358000,
+    "parent": "14"
+  },
+  {
+    "name": "14",
+    "years": 23042000,
+    "parent": "12"
+  },
+  {
+    "name": "Chordata",
+    "years": 619400,
+    "parent": "12"
+  },
+  {
+    "name": "12",
+    "years": 60408000,
+    "parent": "5"
+  },
+  {
+    "name": "Tardigrade",
+    "years": 653170000,
+    "parent": "17"
+  },
+  {
+    "name": "Onychophora",
+    "years": 557617210,
+    "parent": "8"
+  },
+  {
+    "name": "Arthropoda",
+    "years": 557617210,
+    "parent": "8"
+  },
+  {
+    "name": "8",
+    "years": 95552790,
+    "parent": "17"
+  },
+  {
+    "name": "17",
+    "years": 0,
+    "parent": "6"
+  },
+  {
+    "name": "Rotifera",
+    "years": 651784000,
+    "parent": "24"
+  },
+  {
+    "name": "Entoprocta",
+    "years": 651784000,
+    "parent": "36"
+  },
+  {
+    "name": "Annelida",
+    "years": 571849000,
+    "parent": "21"
+  },
+  {
+    "name": "Phoronida",
+    "years": 571849000,
+    "parent": "7"
+  },
+  {
+    "name": "Brachiopoda",
+    "years": 571849000,
+    "parent": "7"
+  },
+  {
+    "name": "7",
+    "years": 0,
+    "parent": "21"
+  },
+  {
+    "name": "21",
+    "years": 2125000,
+    "parent": "29"
+  },
+  {
+    "name": "Mollusca",
+    "years": 573974000,
+    "parent": "29"
+  }
+]
