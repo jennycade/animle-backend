@@ -4,44 +4,58 @@
 
 import re
 
+class Node:
+  def __init__(self, name, parent, yearsSinceParent) -> None:
+    self.name = name
+    self.parent = parent
+    self.yearsSinceParent = yearsSinceParent
+  def __str__(self) -> str:
+    if self.parent == None:
+      return f'{self.name}'
+    return f'{self.name}, {self.yearsSinceParent} years since {self.parent.name}'
+def makeNode(node):
+  # read backwards string -> turn into Node
+  print(node)
+
 # first: get recursion working
 def processNwk(nwkPath):
   nwkFile = open(nwkPath, 'r')
 
   # preprocess
-  nwk = nwkFile.read()[:-2] # strip ; and \n
+  nwk = nwkFile.read()
+
+  nodeInProgress = Node('root', None, None)
+  ancestors = []
 
   print('---------------------------------------------')
   print(nwk)
   print('---------------------------------------------')
 
-  # recursion
-  printLevel(nwk)
+  # read backwards!
+  i = len(nwk) - 1
+  print(i)
 
-def printLevel(nwk: str):
-  if nwk[0] == '(' and nwk[-1] == ')':
-    print('root')
-    printLevel(nwk[1:-1])
-  else:
-    pattern = r'([^\(]*)\((.+)\)([^\(]*)'
-    match = re.match(pattern, nwk)
-    if match.group(1) == 
-    if match:
-      print('---------------------------------------------')
-      print(f'Before (:  {match.group(1)}')
-      print(f'After ) :   {match.group(3)}')
-      printLevel(match.group(2))
-      # doesn't drill all the way down
-    else:
-      # no parentheses
-      print(f'Within parentheses:  {nwk}')
-  
+  while i >= 0:
+    char = nwk[i]
+    if char == ')':
+      # make node and add to ancestor stack
+      makeNode(nodeInProgress)
+      ancestors.append(nodeInProgress)
+      nodeInProgress = None
+      i -= 1
+      continue
+    if char == ',':
+      if nodeInProgress:
+        makeNode(nodeInProgress)
+        nodeInProgress = None
+      i -= 1
+      continue
+    if char == '(':
+      # make node AND take top off stack
+      pass
 
+    print(f'Ignoring character {char}')
+    i -= 1
 
-    
-
-
-
-  
 
 processNwk('/Users/jennyzonka/Code/animle-backend/data/simple.nwk')
