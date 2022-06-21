@@ -23,14 +23,18 @@ def printLevel(nwk: str):
     print('root')
     printLevel(nwk[1:-1])
   else:
-    pattern = r'([^\(]*)(\(.+\))(.*)'
+    pattern = r'([^\(]*)\((.+)\)([^\(]*)'
     match = re.match(pattern, nwk)
+    if match.group(1) == 
     if match:
       print('---------------------------------------------')
       print(f'Before (:  {match.group(1)}')
       print(f'After ) :   {match.group(3)}')
       printLevel(match.group(2))
       # doesn't drill all the way down
+    else:
+      # no parentheses
+      print(f'Within parentheses:  {nwk}')
   
 
 
@@ -40,4 +44,4 @@ def printLevel(nwk: str):
 
   
 
-processNwk('/Users/jennyzonka/Code/animle-backend/data/Ursidae_species.nwk')
+processNwk('/Users/jennyzonka/Code/animle-backend/data/simple.nwk')
