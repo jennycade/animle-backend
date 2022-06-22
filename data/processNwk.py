@@ -19,18 +19,22 @@ def makeNode(nodeString: str, parentNode):
   # special case: ';\n' is root
   if nodeString == ';\n':
     node = Node('root', None, None)
+    isSpecies = False
   else:
     # node without species:   'nodeName':millionYears
     # species node:           Genus_species:millionYears
     if nodeString[0] == '\'':
+      isSpecies = True
       pattern = r'\'(\w+)\':([\d\.]+)'
     else:
+      isSpecies = False
       pattern = r'([\w_]+):([\d\.]+)'
     match = re.match(pattern, nodeString)
     name = match.group(1).replace('_', ' ')
     years = int(float(match.group(2)) * 1000000)
     node = Node(name, parentNode, years)
 
+  # todo: do something with isSpecies
   print(node)
   return node
 
@@ -81,4 +85,4 @@ def processNwk(nwkPath):
     i -= 1
 
 
-processNwk('/Users/jennyzonka/Code/animle-backend/data/simple.nwk')
+processNwk('/Users/jennyzonka/Code/animle-backend/data/Ursidae_species.nwk')
