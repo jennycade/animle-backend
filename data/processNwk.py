@@ -5,7 +5,7 @@
 import re
 
 class Node:
-  def __init__(self, name, parent, yearsSinceParent) -> None:
+  def __init__(self, name: str, parent, yearsSinceParent: int) -> None:
     self.name = name
     self.parent = parent
     self.yearsSinceParent = yearsSinceParent
@@ -13,48 +13,71 @@ class Node:
     if self.parent == None:
       return f'{self.name}'
     return f'{self.name}, {self.yearsSinceParent} years since {self.parent.name}'
-def makeNode(node):
-  # read backwards string -> turn into Node
-  print(node)
+def makeNode(nodeString: str, parentNode):
+  # read string -> turn into Node
 
-# first: get recursion working
+  # special case: ';\n' is root
+  if nodeString == ';\n':
+    node = Node('root', None, None)
+  else:
+    # node without species:   'nodeName':millionYears
+    # species node:           Genus_species:millionYears
+    if nodeString[0] == '\'':
+      pattern = r'\'(\w+)\':([\d\.]+)'
+    else:
+      pattern = r'([\w_]+):([\d\.]+)'
+    match = re.match(pattern, nodeString)
+    name = match.group(1).replace('_', ' ')
+    years = int(float(match.group(2)) * 1000000)
+    node = Node(name, parentNode, years)
+
+  print(node)
+  return node
+
 def processNwk(nwkPath):
   nwkFile = open(nwkPath, 'r')
 
   # preprocess
   nwk = nwkFile.read()
 
-  nodeInProgress = Node('root', None, None)
+  nodeInProgress = ''
   ancestors = []
 
   print('---------------------------------------------')
   print(nwk)
   print('---------------------------------------------')
 
-  # read backwards!
+  # read backwards
   i = len(nwk) - 1
-  print(i)
 
   while i >= 0:
     char = nwk[i]
     if char == ')':
-      # make node and add to ancestor stack
-      makeNode(nodeInProgress)
-      ancestors.append(nodeInProgress)
-      nodeInProgress = None
+      # make node AND add to ancestor stack
+      ancestor = None if len(ancestors) == 0 else ancestors[-1] # pass None for adding root
+      newNode = makeNode(nodeInProgress, ancestor) 
+      nodeInProgress = ''
+      ancestors.append(newNode)
       i -= 1
       continue
     if char == ',':
+      # make new node
       if nodeInProgress:
-        makeNode(nodeInProgress)
-        nodeInProgress = None
+        makeNode(nodeInProgress, ancestors[-1])
+        nodeInProgress = ''
       i -= 1
       continue
     if char == '(':
-      # make node AND take top off stack
-      pass
+      # make node AND remove most recent ancestor
+      if not nodeInProgress == '':
+        # there's a node to make (i.e. not multiple node closures in a row)
+        makeNode(nodeInProgress, ancestors[-1])
+        nodeInProgress = ''
+      ancestors.pop()
+      i-= 1
+      continue
 
-    print(f'Ignoring character {char}')
+    nodeInProgress = char + nodeInProgress
     i -= 1
 
 
