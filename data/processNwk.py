@@ -3,16 +3,27 @@
 # if !isNumeric(nodeName) -> make a species too
 
 import re
+import pymongo
+import os
+
+# connect to DB
+# os.environ['MONGO_URI']
+# connect to MongoDB, change the << MONGODB URL >> to reflect your own connection string
+client = pymongo.MongoClient(os.environ['MONGO_CLIENT_URI'])
+db = client.animle
+# Issue the serverStatus command and print the results
+serverStatusResult = db.command("serverStatus")
+print(serverStatusResult)
 
 class Node:
-  def __init__(self, name: str, parent, yearsSinceParent: int) -> None:
+  def __init__(self, name: str, parentId, yearsSinceParent: int) -> None:
     self.name = name
-    self.parent = parent
+    self.parent = parentId
     self.yearsSinceParent = yearsSinceParent
   def __str__(self) -> str:
     if self.parent == None:
       return f'{self.name}'
-    return f'{self.name}, {self.yearsSinceParent} years since {self.parent.name}'
+    return f'{self.name}, {self.yearsSinceParent} years since {self.parent}'
 def makeNode(nodeString: str, parentNode):
   # read string -> turn into Node
 
@@ -32,10 +43,10 @@ def makeNode(nodeString: str, parentNode):
     match = re.match(pattern, nodeString)
     name = match.group(1).replace('_', ' ')
     years = int(float(match.group(2)) * 1000000)
-    node = Node(name, parentNode, years)
+    node = Node(name, parentNode.name, years)
 
   # todo: do something with isSpecies
-  print(node)
+  # print(node)
   return node
 
 def processNwk(nwkPath):
