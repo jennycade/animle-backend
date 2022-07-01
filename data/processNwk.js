@@ -1,37 +1,13 @@
 const fs = require('fs/promises');
 const { v4: uuidv4 } = require('uuid');
 
-const Node = require('../models/node');
-const Animal = require('../models/animal');
-
-class TreeNode {
-  name;
-  parent;
-  yearsSinceParent;
-
-  constructor(name, parent, yearsSinceParent) {
-    this.name = name;
-    this.parent = parent;
-    this.yearsSinceParent = yearsSinceParent;
-  }
-
-  toString() {
-    if (this.parent) {
-      return this.name;
-    }
-    return `${this.name}, ${this.yearsSinceParent} years since ${this.parent.name}`;
-  }
-}
-
 async function makeNode(nodeString, parentNodeId, nodeJsonPath, speciesJsonPath) {
-  let node, pattern;
+  let pattern;
   let isSpecies = false;
   let name = null;
   let years = null;
   // special case: ';\n' is root
-  if (nodeString === ';\n') {
-    node = new TreeNode('root', null, null);
-  } else {
+  if (nodeString !== ';\n') {
     // node without species:   'nodeName':millionYears
     // species node:           Genus_species:millionYears
     if (nodeString[0] === `'`) {
@@ -44,8 +20,6 @@ async function makeNode(nodeString, parentNodeId, nodeJsonPath, speciesJsonPath)
     const match = pattern.exec(nodeString);
     name = match[1].replaceAll('_', ' ');
     years = parseFloat(match[2]) * 1000000;
-
-    node = new TreeNode(name, parentNodeId, years);
   }
   
   const id = uuidv4();
@@ -148,3 +122,9 @@ processFile(
   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json',
   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_species.json',
 );
+
+// to seed the databases
+// 1. fix the end of the json files manually (facepalm)
+// 2. use mongoimport
+// mongoimport --uri mongodb+srv://jennycade:PASSWORD@cluster0.hhhey.mongodb.net/animle --collection nodes --type json --file /Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json --jsonArray
+// mongoimport --uri mongodb+srv://jennycade:PASSWORD@cluster0.hhhey.mongodb.net/animle --collection animals --type json --file /Users/jennyzonka/Code/animle-backend/data/Ursidae_species_species.json --jsonArray
