@@ -1,14 +1,36 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET user - verify */
-router.get('/:userId', async function(req, res, next) {
+const User = require('../models/user');
+const userController = require('../controllers/userController');
 
-  res.send('respond with a resource');
-});
+/* GET user - verify */
+router.get('/:userId',
+  userController.validateObjectId,
+  async function(req, res, next) {
+    try {
+      // found -> 200; invalid -> 404
+      // check for valid userId
+      const user = await User.findById(req.params.userId).exec();
+      if (!user) {
+        const err = new Error('User not found');
+        err.status = 404;
+        throw err;
+      }
+      res.status(204).send();
+    } catch (err) {
+      return next(err);
+    }
+  }
+);
 
 router.post('/', async function(req, res, next) {
-  res.status(201).json({userId: 'bloop'})
+  try {
+    const user = await User.create({games: []});
+    res.status(201).json({userId: user._id});
+  } catch (err) {
+    return next(err);
+  }
 });
 
 module.exports = router;
