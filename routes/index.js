@@ -12,7 +12,7 @@ var Animal = require('../models/animal');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('send a resource');
+  res.json({ name: 'Frodo' });
 });
 
 // GET all species
