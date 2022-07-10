@@ -3,6 +3,8 @@ var router = express.Router();
 
 const User = require('../models/user');
 const userController = require('../controllers/userController');
+const Game = require('../models/game');
+const Target = require('../models/target');
 
 router.post('/', async function(req, res, next) {
   /*
@@ -48,13 +50,21 @@ router.get('/:userId/stats', async function(req, res, next) {
   }
 });
 
-module.exports = router;
-
 router.get('/:userId/games/', async function(req, res, next) {
   /*
-  check server time and user’s game. return info to populate gameboard: already won, prevGuesses, no guesses, and time for next game. need to decide when to calculate stats, esp. streak
+  check server time and user’s game. return info to populate gameboard:
+  - already won
+  - prevGuesses
+  - no guesses
+  - time for next game
   */
   try {
+    // check for current game
+
+    // no game? create it
+
+    // return gameboard info
+
     res.status(404).send();
   } catch (err) {
     return next(err);
@@ -63,7 +73,21 @@ router.get('/:userId/games/', async function(req, res, next) {
 
 router.post('/:userId/games/:gameId/guesses', async function(req, res, next) {
   /*
-  respond with: error (invalid, already guessed, already won, game not current, server error), win, years
+  respond with:
+  - error:
+    - invalid
+    - already guessed
+    - already won
+    - game not current
+    - server error
+  - win
+  - years
   */
-
+  try {
+    res.status(404).send();
+  } catch (err) {
+    return next(err);
+  }
 });
+
+module.exports = router;
