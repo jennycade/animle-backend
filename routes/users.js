@@ -4,13 +4,26 @@ var router = express.Router();
 const User = require('../models/user');
 const userController = require('../controllers/userController');
 
-/* GET user - verify */
+router.post('/', async function(req, res, next) {
+  /*
+  creates user, returns {userId} and status 201
+  */
+  try {
+    const user = await User.create({games: []});
+    res.status(201).json({userId: user._id});
+  } catch (err) {
+    return next(err);
+  }
+});
+
 router.get('/:userId',
   userController.validateObjectId,
   async function(req, res, next) {
+    /*
+    check for valid userId
+    returns 204 (user found) or 404 (user not found)
+    */
     try {
-      // found -> 200; invalid -> 404
-      // check for valid userId
       const user = await User.findById(req.params.userId).exec();
       if (!user) {
         const err = new Error('User not found');
@@ -24,13 +37,33 @@ router.get('/:userId',
   }
 );
 
-router.post('/', async function(req, res, next) {
+router.get('/:userId/stats', async function(req, res, next) {
+  /*
+  returns user stats: # games played, % won, current streak, max streak, # guesses histogram
+  */
   try {
-    const user = await User.create({games: []});
-    res.status(201).json({userId: user._id});
+    res.status(404).send();
   } catch (err) {
     return next(err);
   }
 });
 
 module.exports = router;
+
+router.get('/:userId/games/', async function(req, res, next) {
+  /*
+  check server time and user’s game. return info to populate gameboard: already won, prevGuesses, no guesses, and time for next game. need to decide when to calculate stats, esp. streak
+  */
+  try {
+    res.status(404).send();
+  } catch (err) {
+    return next(err);
+  }
+});
+
+router.post('/:userId/games/:gameId/guesses', async function(req, res, next) {
+  /*
+  respond with: error (invalid, already guessed, already won, game not current, server error), win, years
+  */
+
+});
