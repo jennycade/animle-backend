@@ -125,7 +125,13 @@ router.post('/:userId/games/:gameId/guesses/:animalId',
         throw(err);
       }
 
+      // check cache in target
+      // TODO
+
       // find time since recent common ancestor
+      // TODO
+
+      // add to target cache
       // TODO
       
     } catch (err) {

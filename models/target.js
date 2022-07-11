@@ -14,7 +14,7 @@ const TargetSchema = new Schema({
     {
       ancestor: {
         type: Schema.Type.ObjectId,
-        ref: 'Animal',
+        ref: 'Node',
         required: true,
       },
       yearsSinceAncestor: {

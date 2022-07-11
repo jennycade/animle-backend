@@ -19,4 +19,7 @@ const AnimalSchema = new Schema(
   }
 );
 
+// TODO:
+// consider adding lineage field (nodes) to simplify logic for processing guesses.
+
 module.exports = mongoose.model('Animal', AnimalSchema);
