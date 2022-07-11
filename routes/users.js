@@ -60,12 +60,28 @@ router.get('/:userId/games/', async function(req, res, next) {
   */
   try {
     // check for current game
+    // current target
+    const today = new Date();
+    const target = await Target.findOne({
+      date: `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`,
+    }).exec();
+    let game = await Game.findOne({
+      target: target._id,
+      user: req.params.userId,
+    }).exec();
 
     // no game? create it
+    if (!game) {
+      game = await Game.create({
+        user: req.params.userId,
+        target: target._id,
+        won: false,
+        guesses: [],
+      });
+    }
 
     // return gameboard info
-
-    res.status(404).send();
+    return game;
   } catch (err) {
     return next(err);
   }
