@@ -1,7 +1,7 @@
 const fs = require('fs/promises');
 const { v4: uuidv4 } = require('uuid');
 
-async function makeNode(nodeString, parentNodeId, nodeJsonPath, speciesJsonPath) {
+async function makeNode(nodeString, parentNodeId, jsonPath) {
   let pattern;
   let isSpecies = false;
   let name = null;
@@ -23,23 +23,18 @@ async function makeNode(nodeString, parentNodeId, nodeJsonPath, speciesJsonPath)
   }
   
   const id = uuidv4();
-  const content = JSON.stringify({
+  const nodeData = {
     _id: id,
     parent: parentNodeId,
     yearsSinceParent: years,
-  });
+    isSpecies: isSpecies,
+    speciesName: isSpecies ? name : null,
+    otherNames: isSpecies ? [] : null,
+  };
+  const content = JSON.stringify(nodeData);
+  // write to file
   try {
-    await fs.appendFile(nodeJsonPath, content + ',\n');
-    if (isSpecies) {
-      const speciesId = uuidv4();
-      const speciesStr = JSON.stringify({
-        _id: speciesId,
-        speciesName: name,
-        otherNames: [],
-        node: id,
-      });
-      await fs.appendFile(speciesJsonPath, speciesStr + ',\n');
-    }
+    await fs.appendFile(jsonPath, content + ',\n');
   } catch (err) {
     console.log(err);
   }
@@ -47,7 +42,7 @@ async function makeNode(nodeString, parentNodeId, nodeJsonPath, speciesJsonPath)
   return id;
 }
 
-const processNwk = async (nwkString, nodeJsonPath, speciesJsonPath) => {
+const processNwk = async (nwkString, jsonPath) => {
   let nodeInProgress = '';
   const ancestors = [];
 
@@ -60,7 +55,7 @@ const processNwk = async (nwkString, nodeJsonPath, speciesJsonPath) => {
         // make node and add to ancestor stack
         const ancestor = ancestors.length === 0 ? null : ancestors[ancestors.length - 1]; // pass null for adding the root
         const newNode = await makeNode(
-          nodeInProgress, ancestor, nodeJsonPath, speciesJsonPath
+          nodeInProgress, ancestor, jsonPath
         );
         nodeInProgress = '';
         ancestors.push(newNode);
@@ -72,7 +67,7 @@ const processNwk = async (nwkString, nodeJsonPath, speciesJsonPath) => {
           await makeNode(
             nodeInProgress,
             ancestors[ancestors.length - 1],
-            nodeJsonPath, speciesJsonPath
+            jsonPath
           );
           nodeInProgress = '';
         }
@@ -83,7 +78,9 @@ const processNwk = async (nwkString, nodeJsonPath, speciesJsonPath) => {
         if (nodeInProgress !== '') {
           // there's a node to make (i.e. not multiple node closures in a row)
           await makeNode(
-            nodeInProgress, ancestors[ancestors.length - 1], nodeJsonPath, speciesJsonPath
+            nodeInProgress,
+            ancestors[ancestors.length - 1],
+            jsonPath
           );
           nodeInProgress = '';
         }
@@ -97,22 +94,19 @@ const processNwk = async (nwkString, nodeJsonPath, speciesJsonPath) => {
   }
 }
 
-const processFile = async (nwkPath, nodeJsonPath, speciesJsonPath) => {
+const processFile = async (nwkPath, jsonPath) => {
   
-
   // read, parse, and save data
   try {
     // start files and overwrite existing JSON
-    await fs.writeFile(nodeJsonPath, '[\n');
-    await fs.writeFile(speciesJsonPath, '[\n');
+    await fs.writeFile(jsonPath, '[\n');
 
     const data = await fs.readFile(nwkPath, {encoding: 'utf8'});
 
-    await processNwk(data, nodeJsonPath, speciesJsonPath);
+    await processNwk(data, jsonPath);
 
     // finish files
-    await fs.appendFile(nodeJsonPath, ']');
-    await fs.appendFile(speciesJsonPath, ']');
+    await fs.appendFile(jsonPath, ']');
   } catch (err) {
     console.log(err);
   }
@@ -120,7 +114,6 @@ const processFile = async (nwkPath, nodeJsonPath, speciesJsonPath) => {
 processFile(
   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species.nwk',
   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json',
-  '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_species.json',
 );
 
 // to seed the databases
