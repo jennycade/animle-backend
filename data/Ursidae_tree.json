@@ -1,622 +1,697 @@
 [
   {
-    "_id": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+    "_id": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
     "parent": null,
     "yearsSinceParent": null,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": []
   },
   {
-    "_id": "fdea18ef-6d68-4909-8387-b4b199e759cc",
-    "parent": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+    "_id": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
+    "parent": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
     "yearsSinceParent": 5318065,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 5318065
       }
     ]
   },
   {
-    "_id": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
-    "parent": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+    "_id": "6bd71bfa-2a73-4728-a487-1e0013521e44",
+    "parent": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
     "yearsSinceParent": 8035485,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 13353550
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 8035485
       }
     ]
   },
   {
-    "_id": "9872290b-b000-4624-9192-1541d006b5c5",
-    "parent": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+    "_id": "d7f33004-f740-49a7-83a2-f0b5880bcb93",
+    "parent": "6bd71bfa-2a73-4728-a487-1e0013521e44",
     "yearsSinceParent": 5902700,
+    "isSpecies": true,
+    "speciesName": "Melursus ursinus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       }
     ]
   },
   {
-    "_id": "25fc2807-831b-4607-9efd-f853b54efc71",
-    "parent": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+    "_id": "09d26029-7c99-4f97-a161-8f49dc2424c2",
+    "parent": "6bd71bfa-2a73-4728-a487-1e0013521e44",
     "yearsSinceParent": 1063000,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 14416550
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 9098485
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 1063000
       }
     ]
   },
   {
-    "_id": "47044641-fafc-492c-b3c0-82342e98f82b",
-    "parent": "25fc2807-831b-4607-9efd-f853b54efc71",
+    "_id": "c9758307-ad70-447d-a84d-264e6dc5adf3",
+    "parent": "09d26029-7c99-4f97-a161-8f49dc2424c2",
     "yearsSinceParent": 2334300,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 16750850
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 11432785
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 3397300
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 2334300
       }
     ]
   },
   {
-    "_id": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
-    "parent": "47044641-fafc-492c-b3c0-82342e98f82b",
+    "_id": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
+    "parent": "c9758307-ad70-447d-a84d-264e6dc5adf3",
     "yearsSinceParent": 1755400,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 18506250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13188185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5152700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4089700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 1755400
       }
     ]
   },
   {
-    "_id": "347522c1-1703-489b-b491-f23e304cf773",
-    "parent": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+    "_id": "ae6bc3d5-110b-4572-8cbd-1a2fcc042685",
+    "parent": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
     "yearsSinceParent": 750000,
+    "isSpecies": true,
+    "speciesName": "Ursus deningeri",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2505400
       },
       {
-        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "ancestor": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
         "yearsSinceAncestor": 750000
       }
     ]
   },
   {
-    "_id": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
-    "parent": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+    "_id": "4210c206-774d-4896-9a27-59b30b532997",
+    "parent": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
     "yearsSinceParent": 476000,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 18982250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13664185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5628700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4565700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2231400
       },
       {
-        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "ancestor": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
         "yearsSinceAncestor": 476000
       }
     ]
   },
   {
-    "_id": "5311e08e-14a3-44a9-9b7e-e5aa44038315",
-    "parent": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+    "_id": "6a660ef9-6092-4e78-80f1-41caa9d33a4b",
+    "parent": "4210c206-774d-4896-9a27-59b30b532997",
     "yearsSinceParent": 274000,
+    "isSpecies": true,
+    "speciesName": "Ursus kudarensis",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2505400
       },
       {
-        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "ancestor": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
         "yearsSinceAncestor": 750000
       },
       {
-        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "ancestor": "4210c206-774d-4896-9a27-59b30b532997",
         "yearsSinceAncestor": 274000
       }
     ]
   },
   {
-    "_id": "88482556-9761-41c5-bd21-32b8f16b18f1",
-    "parent": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+    "_id": "04a2dacf-aab8-4142-9d8a-923d3ec9d86c",
+    "parent": "4210c206-774d-4896-9a27-59b30b532997",
     "yearsSinceParent": 101000,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19083250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13765185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5729700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4666700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2332400
       },
       {
-        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "ancestor": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
         "yearsSinceAncestor": 577000
       },
       {
-        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "ancestor": "4210c206-774d-4896-9a27-59b30b532997",
         "yearsSinceAncestor": 101000
       }
     ]
   },
   {
-    "_id": "33beea9c-676e-482c-9863-b7950d447999",
-    "parent": "88482556-9761-41c5-bd21-32b8f16b18f1",
+    "_id": "6499c9cf-2999-4f3e-8b11-1f0be812ac29",
+    "parent": "04a2dacf-aab8-4142-9d8a-923d3ec9d86c",
     "yearsSinceParent": 173000,
+    "isSpecies": true,
+    "speciesName": "Ursus spelaeus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2505400
       },
       {
-        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "ancestor": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
         "yearsSinceAncestor": 750000
       },
       {
-        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "ancestor": "4210c206-774d-4896-9a27-59b30b532997",
         "yearsSinceAncestor": 274000
       },
       {
-        "ancestor": "88482556-9761-41c5-bd21-32b8f16b18f1",
+        "ancestor": "04a2dacf-aab8-4142-9d8a-923d3ec9d86c",
         "yearsSinceAncestor": 173000
       }
     ]
   },
   {
-    "_id": "22fc4390-cb31-4d27-aa21-ed85cb6cccdf",
-    "parent": "88482556-9761-41c5-bd21-32b8f16b18f1",
+    "_id": "efcab435-b009-4907-bbef-3dbaf813f9a0",
+    "parent": "04a2dacf-aab8-4142-9d8a-923d3ec9d86c",
     "yearsSinceParent": 173000,
+    "isSpecies": true,
+    "speciesName": "Ursus ingressus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2505400
       },
       {
-        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "ancestor": "6982fd29-756f-4ffb-8b4a-d7587bc67ab5",
         "yearsSinceAncestor": 750000
       },
       {
-        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "ancestor": "4210c206-774d-4896-9a27-59b30b532997",
         "yearsSinceAncestor": 274000
       },
       {
-        "ancestor": "88482556-9761-41c5-bd21-32b8f16b18f1",
+        "ancestor": "04a2dacf-aab8-4142-9d8a-923d3ec9d86c",
         "yearsSinceAncestor": 173000
       }
     ]
   },
   {
-    "_id": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
-    "parent": "47044641-fafc-492c-b3c0-82342e98f82b",
+    "_id": "c9ce0a7b-e919-421b-87e8-ac47583216d0",
+    "parent": "c9758307-ad70-447d-a84d-264e6dc5adf3",
     "yearsSinceParent": 1685400,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 18436250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13118185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5082700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4019700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 1685400
       }
     ]
   },
   {
-    "_id": "d58c6349-ab9a-4f5f-9d7c-ddd831b4e977",
-    "parent": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+    "_id": "21a13981-6b21-4426-846e-9d07102f18b0",
+    "parent": "c9ce0a7b-e919-421b-87e8-ac47583216d0",
     "yearsSinceParent": 820000,
+    "isSpecies": true,
+    "speciesName": "Ursus arctos",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2505400
       },
       {
-        "ancestor": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+        "ancestor": "c9ce0a7b-e919-421b-87e8-ac47583216d0",
         "yearsSinceAncestor": 820000
       }
     ]
   },
   {
-    "_id": "957e2642-6f00-41fd-904f-8ddd4880e797",
-    "parent": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+    "_id": "aa37eee2-a63a-4a7b-a041-2165784b9fa0",
+    "parent": "c9ce0a7b-e919-421b-87e8-ac47583216d0",
     "yearsSinceParent": 820000,
+    "isSpecies": true,
+    "speciesName": "Ursus maritimus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "ancestor": "c9758307-ad70-447d-a84d-264e6dc5adf3",
         "yearsSinceAncestor": 2505400
       },
       {
-        "ancestor": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+        "ancestor": "c9ce0a7b-e919-421b-87e8-ac47583216d0",
         "yearsSinceAncestor": 820000
       }
     ]
   },
   {
-    "_id": "3047a1fa-0353-404c-aaba-b8a78851284f",
-    "parent": "25fc2807-831b-4607-9efd-f853b54efc71",
+    "_id": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
+    "parent": "09d26029-7c99-4f97-a161-8f49dc2424c2",
     "yearsSinceParent": 274700,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 14691250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 9373185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 1337700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 274700
       }
     ]
   },
   {
-    "_id": "1bd9c109-cf17-490e-b196-051c5ef1168c",
-    "parent": "3047a1fa-0353-404c-aaba-b8a78851284f",
+    "_id": "f653f9d1-4c1a-4787-b72b-7097b125d1fb",
+    "parent": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
     "yearsSinceParent": 4565000,
+    "isSpecies": true,
+    "speciesName": "Helarctos malayanus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "ancestor": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
         "yearsSinceAncestor": 4565000
       }
     ]
   },
   {
-    "_id": "660b8aaf-b661-4c08-af9b-2d606c279773",
-    "parent": "3047a1fa-0353-404c-aaba-b8a78851284f",
+    "_id": "09e5410b-5849-499e-86c3-8c07d0978e2f",
+    "parent": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
     "yearsSinceParent": 731000,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 15422250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 10104185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 2068700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 1005700
       },
       {
-        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "ancestor": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
         "yearsSinceAncestor": 731000
       }
     ]
   },
   {
-    "_id": "79eadb90-f9d5-4ee5-a2ba-be8b912d69bb",
-    "parent": "660b8aaf-b661-4c08-af9b-2d606c279773",
+    "_id": "7f944c65-1f43-464d-8ed9-9459a3ce0ad0",
+    "parent": "09e5410b-5849-499e-86c3-8c07d0978e2f",
     "yearsSinceParent": 3834000,
+    "isSpecies": true,
+    "speciesName": "Ursus thibetanus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "ancestor": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
         "yearsSinceAncestor": 4565000
       },
       {
-        "ancestor": "660b8aaf-b661-4c08-af9b-2d606c279773",
+        "ancestor": "09e5410b-5849-499e-86c3-8c07d0978e2f",
         "yearsSinceAncestor": 3834000
       }
     ]
   },
   {
-    "_id": "224b8113-012c-4f92-a047-1ffd20178031",
-    "parent": "660b8aaf-b661-4c08-af9b-2d606c279773",
+    "_id": "4ac0d03f-71e2-4035-81c4-b339b44bf744",
+    "parent": "09e5410b-5849-499e-86c3-8c07d0978e2f",
     "yearsSinceParent": 3834000,
+    "isSpecies": true,
+    "speciesName": "Ursus americanus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "ancestor": "6bd71bfa-2a73-4728-a487-1e0013521e44",
         "yearsSinceAncestor": 5902700
       },
       {
-        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "ancestor": "09d26029-7c99-4f97-a161-8f49dc2424c2",
         "yearsSinceAncestor": 4839700
       },
       {
-        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "ancestor": "4577035a-2594-4eb8-a9b6-10995fa8f5d7",
         "yearsSinceAncestor": 4565000
       },
       {
-        "ancestor": "660b8aaf-b661-4c08-af9b-2d606c279773",
+        "ancestor": "09e5410b-5849-499e-86c3-8c07d0978e2f",
         "yearsSinceAncestor": 3834000
       }
     ]
   },
   {
-    "_id": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
-    "parent": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+    "_id": "d3ea0c2b-1129-4fd3-9762-ac27af4f245f",
+    "parent": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
     "yearsSinceParent": 7171885,
+    "isSpecies": false,
+    "speciesName": null,
+    "otherNames": null,
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 12489950
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 7171885
       }
     ]
   },
   {
-    "_id": "0b051468-f71f-4782-9fa9-984176f6a1ad",
-    "parent": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+    "_id": "ce310397-960b-4780-a838-2cff2e35cdf9",
+    "parent": "d3ea0c2b-1129-4fd3-9762-ac27af4f245f",
     "yearsSinceParent": 6766300,
+    "isSpecies": true,
+    "speciesName": "Tremarctos ornatus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+        "ancestor": "d3ea0c2b-1129-4fd3-9762-ac27af4f245f",
         "yearsSinceAncestor": 6766300
       }
     ]
   },
   {
-    "_id": "f7d29bee-d8c6-48b8-8566-8cdc1d64c913",
-    "parent": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+    "_id": "13ab7b58-a789-4eb8-ac59-14d6401c48f0",
+    "parent": "d3ea0c2b-1129-4fd3-9762-ac27af4f245f",
     "yearsSinceParent": 6766300,
+    "isSpecies": true,
+    "speciesName": "Arctodus simus",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       },
       {
-        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "ancestor": "a6b7586d-08cb-451c-ab5c-fe2a87529e6c",
         "yearsSinceAncestor": 13938185
       },
       {
-        "ancestor": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+        "ancestor": "d3ea0c2b-1129-4fd3-9762-ac27af4f245f",
         "yearsSinceAncestor": 6766300
       }
     ]
   },
   {
-    "_id": "82a92228-6637-4315-b243-cdd4b5fed76d",
-    "parent": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+    "_id": "82114bf4-2566-484a-845b-94ac3cf8c182",
+    "parent": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
     "yearsSinceParent": 19256250,
+    "isSpecies": true,
+    "speciesName": "Ailuropoda melanoleuca",
+    "otherNames": [],
     "lineage": [
       {
-        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "ancestor": "72d1d450-56f3-4bd2-9567-564b3ccf4569",
         "yearsSinceAncestor": 19256250
       }
     ]
