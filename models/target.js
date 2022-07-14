@@ -6,7 +6,7 @@ const TargetSchema = new Schema({
     type: Date,
   },
   node: {
-    type: Schema.Type.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Node',
     required: true,
   },

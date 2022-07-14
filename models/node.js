@@ -13,8 +13,7 @@ const NodeSchema = new Schema({
   lineage: [
     {
       ancestor: {
-        type: Schema.Type.ObjectId,
-        ref: 'Node',
+        type: String, 
       },
       yearsSinceAncestor: {
         type: Number,
