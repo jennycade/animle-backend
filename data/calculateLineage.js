@@ -53,7 +53,21 @@ const deepCopy = (src) => {
   return target;
 }
 
+const processFile = (nodeJsonPath, lineageTreeJsonPath) => {
+  const fs = require('fs');
+  try {
+    const tree = require(nodeJsonPath);
+    const lineageTree = getTreeLineage(tree);
+    fs.writeFileSync(lineageTreeJsonPath, JSON.stringify(lineageTree))
+  } catch (err) {
+    console.error(err);
+  }
+}
 
+processFile(
+  '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json',
+  '/Users/jennyzonka/Code/animle-backend/data/Ursidae_tree.json'
+);
 
 
 module.exports = {getLineage, getTreeLineage};

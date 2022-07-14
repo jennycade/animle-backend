@@ -1,0 +1,624 @@
+[
+  {
+    "_id": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+    "parent": null,
+    "yearsSinceParent": null,
+    "lineage": []
+  },
+  {
+    "_id": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+    "parent": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+    "yearsSinceParent": 5318065,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 5318065
+      }
+    ]
+  },
+  {
+    "_id": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+    "parent": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+    "yearsSinceParent": 8035485,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 13353550
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 8035485
+      }
+    ]
+  },
+  {
+    "_id": "9872290b-b000-4624-9192-1541d006b5c5",
+    "parent": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+    "yearsSinceParent": 5902700,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      }
+    ]
+  },
+  {
+    "_id": "25fc2807-831b-4607-9efd-f853b54efc71",
+    "parent": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+    "yearsSinceParent": 1063000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 14416550
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 9098485
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 1063000
+      }
+    ]
+  },
+  {
+    "_id": "47044641-fafc-492c-b3c0-82342e98f82b",
+    "parent": "25fc2807-831b-4607-9efd-f853b54efc71",
+    "yearsSinceParent": 2334300,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 16750850
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 11432785
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 3397300
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 2334300
+      }
+    ]
+  },
+  {
+    "_id": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+    "parent": "47044641-fafc-492c-b3c0-82342e98f82b",
+    "yearsSinceParent": 1755400,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 18506250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13188185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5152700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4089700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 1755400
+      }
+    ]
+  },
+  {
+    "_id": "347522c1-1703-489b-b491-f23e304cf773",
+    "parent": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+    "yearsSinceParent": 750000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2505400
+      },
+      {
+        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "yearsSinceAncestor": 750000
+      }
+    ]
+  },
+  {
+    "_id": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+    "parent": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+    "yearsSinceParent": 476000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 18982250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13664185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5628700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4565700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2231400
+      },
+      {
+        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "yearsSinceAncestor": 476000
+      }
+    ]
+  },
+  {
+    "_id": "5311e08e-14a3-44a9-9b7e-e5aa44038315",
+    "parent": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+    "yearsSinceParent": 274000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2505400
+      },
+      {
+        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "yearsSinceAncestor": 750000
+      },
+      {
+        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "yearsSinceAncestor": 274000
+      }
+    ]
+  },
+  {
+    "_id": "88482556-9761-41c5-bd21-32b8f16b18f1",
+    "parent": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+    "yearsSinceParent": 101000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19083250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13765185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5729700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4666700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2332400
+      },
+      {
+        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "yearsSinceAncestor": 577000
+      },
+      {
+        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "yearsSinceAncestor": 101000
+      }
+    ]
+  },
+  {
+    "_id": "33beea9c-676e-482c-9863-b7950d447999",
+    "parent": "88482556-9761-41c5-bd21-32b8f16b18f1",
+    "yearsSinceParent": 173000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2505400
+      },
+      {
+        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "yearsSinceAncestor": 750000
+      },
+      {
+        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "yearsSinceAncestor": 274000
+      },
+      {
+        "ancestor": "88482556-9761-41c5-bd21-32b8f16b18f1",
+        "yearsSinceAncestor": 173000
+      }
+    ]
+  },
+  {
+    "_id": "22fc4390-cb31-4d27-aa21-ed85cb6cccdf",
+    "parent": "88482556-9761-41c5-bd21-32b8f16b18f1",
+    "yearsSinceParent": 173000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2505400
+      },
+      {
+        "ancestor": "6afe86fa-d1e8-4cfa-b316-75da4aab2834",
+        "yearsSinceAncestor": 750000
+      },
+      {
+        "ancestor": "5631611a-b5b0-4d86-9c76-ef8af3b213d7",
+        "yearsSinceAncestor": 274000
+      },
+      {
+        "ancestor": "88482556-9761-41c5-bd21-32b8f16b18f1",
+        "yearsSinceAncestor": 173000
+      }
+    ]
+  },
+  {
+    "_id": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+    "parent": "47044641-fafc-492c-b3c0-82342e98f82b",
+    "yearsSinceParent": 1685400,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 18436250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13118185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5082700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4019700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 1685400
+      }
+    ]
+  },
+  {
+    "_id": "d58c6349-ab9a-4f5f-9d7c-ddd831b4e977",
+    "parent": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+    "yearsSinceParent": 820000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2505400
+      },
+      {
+        "ancestor": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+        "yearsSinceAncestor": 820000
+      }
+    ]
+  },
+  {
+    "_id": "957e2642-6f00-41fd-904f-8ddd4880e797",
+    "parent": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+    "yearsSinceParent": 820000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "47044641-fafc-492c-b3c0-82342e98f82b",
+        "yearsSinceAncestor": 2505400
+      },
+      {
+        "ancestor": "a12a9ec1-86bd-48ec-8ba1-31232441d52f",
+        "yearsSinceAncestor": 820000
+      }
+    ]
+  },
+  {
+    "_id": "3047a1fa-0353-404c-aaba-b8a78851284f",
+    "parent": "25fc2807-831b-4607-9efd-f853b54efc71",
+    "yearsSinceParent": 274700,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 14691250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 9373185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 1337700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 274700
+      }
+    ]
+  },
+  {
+    "_id": "1bd9c109-cf17-490e-b196-051c5ef1168c",
+    "parent": "3047a1fa-0353-404c-aaba-b8a78851284f",
+    "yearsSinceParent": 4565000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "yearsSinceAncestor": 4565000
+      }
+    ]
+  },
+  {
+    "_id": "660b8aaf-b661-4c08-af9b-2d606c279773",
+    "parent": "3047a1fa-0353-404c-aaba-b8a78851284f",
+    "yearsSinceParent": 731000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 15422250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 10104185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 2068700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 1005700
+      },
+      {
+        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "yearsSinceAncestor": 731000
+      }
+    ]
+  },
+  {
+    "_id": "79eadb90-f9d5-4ee5-a2ba-be8b912d69bb",
+    "parent": "660b8aaf-b661-4c08-af9b-2d606c279773",
+    "yearsSinceParent": 3834000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "yearsSinceAncestor": 4565000
+      },
+      {
+        "ancestor": "660b8aaf-b661-4c08-af9b-2d606c279773",
+        "yearsSinceAncestor": 3834000
+      }
+    ]
+  },
+  {
+    "_id": "224b8113-012c-4f92-a047-1ffd20178031",
+    "parent": "660b8aaf-b661-4c08-af9b-2d606c279773",
+    "yearsSinceParent": 3834000,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "52c5affa-6a5f-4ca5-a290-d09969398e1f",
+        "yearsSinceAncestor": 5902700
+      },
+      {
+        "ancestor": "25fc2807-831b-4607-9efd-f853b54efc71",
+        "yearsSinceAncestor": 4839700
+      },
+      {
+        "ancestor": "3047a1fa-0353-404c-aaba-b8a78851284f",
+        "yearsSinceAncestor": 4565000
+      },
+      {
+        "ancestor": "660b8aaf-b661-4c08-af9b-2d606c279773",
+        "yearsSinceAncestor": 3834000
+      }
+    ]
+  },
+  {
+    "_id": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+    "parent": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+    "yearsSinceParent": 7171885,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 12489950
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 7171885
+      }
+    ]
+  },
+  {
+    "_id": "0b051468-f71f-4782-9fa9-984176f6a1ad",
+    "parent": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+    "yearsSinceParent": 6766300,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+        "yearsSinceAncestor": 6766300
+      }
+    ]
+  },
+  {
+    "_id": "f7d29bee-d8c6-48b8-8566-8cdc1d64c913",
+    "parent": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+    "yearsSinceParent": 6766300,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      },
+      {
+        "ancestor": "fdea18ef-6d68-4909-8387-b4b199e759cc",
+        "yearsSinceAncestor": 13938185
+      },
+      {
+        "ancestor": "d50a1f2a-cc75-479a-ae6d-d3c302b45700",
+        "yearsSinceAncestor": 6766300
+      }
+    ]
+  },
+  {
+    "_id": "82a92228-6637-4315-b243-cdd4b5fed76d",
+    "parent": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+    "yearsSinceParent": 19256250,
+    "lineage": [
+      {
+        "ancestor": "f9d65514-a81a-4205-b1b0-fb080d79004c",
+        "yearsSinceAncestor": 19256250
+      }
+    ]
+  }
+]
