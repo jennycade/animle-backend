@@ -12,6 +12,19 @@ const getLineage = (node, tree) => {
   return parentLineage;
 }
 
+const getTreeLineage = (tree) => {
+  const lineageTree = [];
+  tree.forEach((node) => {
+    const nodeLineage = getLineage(node, tree);
+    const nodeWithLineage = {
+      ...node,
+      lineage: nodeLineage,
+    }
+    lineageTree.push(nodeWithLineage);
+  });
+  return lineageTree;
+}
 
 
-module.exports = getLineage;
+
+module.exports = {getLineage, getTreeLineage};
