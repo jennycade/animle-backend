@@ -64,10 +64,10 @@ const processFile = (nodeJsonPath, lineageTreeJsonPath) => {
   }
 }
 
-processFile(
-  '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json',
-  '/Users/jennyzonka/Code/animle-backend/data/Ursidae_tree.json'
-);
+// processFile(
+//   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json',
+//   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_tree.json'
+// );
 
 
 module.exports = {getLineage, getTreeLineage};
