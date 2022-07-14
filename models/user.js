@@ -7,7 +7,8 @@ const UserSchema = new Schema({
       type: Schema.Types.ObjectId,
       ref: 'Game',
     }
-  ]
+  ],
+  // TODO: add stats
 });
 
 module.exports = mongoose.model('User', UserSchema);

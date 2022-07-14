@@ -7,7 +7,7 @@ const Target = require('../models/target');
 
 const userController = require('../controllers/userController');
 const gameController = require('../controllers/gameController');
-const animalController = require('../controllers/animalController');
+const animalController = require('../controllers/nodeController');
 
 router.post('/', async function(req, res, next) {
   /*

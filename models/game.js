@@ -18,9 +18,9 @@ const GameSchema = new Schema({
   },
   guesses: [
     {
-      animal: {
+      node: {
         type: Schema.Types.ObjectId,
-        ref: 'Animal',
+        ref: 'Node',
         required: true,
       },
       yearsSinceLastCommonAncestor: {

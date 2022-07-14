@@ -118,6 +118,6 @@ processFile(
 
 // to seed the databases
 // 1. fix the end of the json files manually (facepalm)
-// 2. use mongoimport
-// mongoimport --uri mongodb+srv://jennycade:PASSWORD@cluster0.hhhey.mongodb.net/animle --collection nodes --type json --file /Users/jennyzonka/Code/animle-backend/data/Ursidae_species_nodes.json --jsonArray
-// mongoimport --uri mongodb+srv://jennycade:PASSWORD@cluster0.hhhey.mongodb.net/animle --collection animals --type json --file /Users/jennyzonka/Code/animle-backend/data/Ursidae_species_species.json --jsonArray
+// 2. run calculageLineage.js
+// 3. use mongoimport
+// mongoimport --uri mongodb+srv://jennycade:PASSWORD@cluster0.hhhey.mongodb.net/animle --collection nodes --type json --file /Users/jennyzonka/Code/animle-backend/data/Ursidae_tree.json --jsonArray

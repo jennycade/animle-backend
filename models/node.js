@@ -10,6 +10,22 @@ const NodeSchema = new Schema({
     type: Number,
     min: 0,
   },
+  lineage: [
+    {
+      ancestor: {
+        type: Schema.Type.ObjectId,
+        ref: 'Node',
+      },
+      yearsSinceAncestor: {
+        type: Number,
+      },
+    }
+  ],
+  isSpecies: Boolean,
+  speciesName: String,
+  otherNames: {
+    type: [String],
+  },
 });
 
 module.exports = mongoose.model('Node', NodeSchema);

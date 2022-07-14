@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var Animal = require('../models/animal');
+var Node = require('../models/node');
 
 // routes
 // get gameboard state
@@ -20,7 +20,10 @@ router.get('/species', async function(req, res, next) {
   // TODO: consider cacheing
   try {
     // get the species names
-    const animals = await Animal.find().sort('speciesName').exec();
+    const animals = await Node
+      .find({isSpecies: true})
+      .sort('speciesName')
+      .exec();
     res.json(animals);
   } catch (err) {
     return next(err);

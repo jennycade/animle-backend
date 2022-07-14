@@ -5,30 +5,16 @@ const TargetSchema = new Schema({
   date: {
     type: Date,
   },
-  animal: {
+  node: {
     type: Schema.Type.ObjectId,
-    ref: 'Animal',
+    ref: 'Node',
     required: true,
   },
-  lineage: [
-    {
-      ancestor: {
-        type: Schema.Type.ObjectId,
-        ref: 'Node',
-        required: true,
-      },
-      yearsSinceAncestor: {
-        type: Number,
-        required: true,
-        min: 0,
-      },
-    }
-  ],
   guessCache: [
     {
-      animal: {
+      node: {
         type: Schema.Types.ObjectId,
-        ref: 'Animal',
+        ref: 'Node',
         required: true,
       },
       yearsSinceLastCommonAncestor: {

@@ -1,10 +1,10 @@
-const Animal = require('../models/animal');
+const Node = require('../models/node');
 const {validateObjectId} = require('../services/validateObjectId');
 
 exports.validateObjectId = (req, res, next) => {
-  const isValid = validateObjectId(req.params.animalId);
+  const isValid = validateObjectId(req.params.nodeId);
   if (!isValid) {
-    const err = new Error('Invalid animal id');
+    const err = new Error('Invalid node id');
     err.status = 400;
     return next(err);
   } else {
