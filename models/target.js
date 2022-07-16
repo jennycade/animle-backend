@@ -5,7 +5,7 @@ const TargetSchema = new Schema({
   date: {
     type: String,
     index: true,
-    // TODO: add ISO regex match ####-##-##
+    match: /\d{4}-[01]\d-[0-3]\d/
   },
   node: {
     type: Schema.Types.ObjectId,
