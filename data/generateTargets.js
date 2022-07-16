@@ -7,8 +7,9 @@ const createTargets = (tree, startDateString, endDateString) => {
   const targets = [];
 
   let date = new Date(startDateString);
+  const endDate = new Date(endDateString);
   const recentNodeIds = [];
-  while (date <= endDateString) {
+  while (date <= endDate) {
     // randomly pick node
     let nodeId = tree[Math.floor(Math.random() * tree.length)]._id;
     // disallow repeats for x days
@@ -34,4 +35,26 @@ const createTargets = (tree, startDateString, endDateString) => {
   return targets;
 }
 
+const exportTargets = (treeJsonPath, targetsJsonPath, startDateString, endDateString) => {
+  const fs = require('fs');
+  try {
+    const tree = require(treeJsonPath);
+    const targets = createTargets(tree, startDateString, endDateString);
+    fs.writeFileSync(targetsJsonPath, JSON.stringify(targets));
+  } catch (err) {
+    console.error(err);
+  }
+}
+// exportTargets(
+//   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_tree.json',
+//   '/Users/jennyzonka/Code/animle-backend/data/Ursidae_targets.json',
+//   '7/16/2022',
+//   '7/15/2023'
+// );
+
 module.exports = { createTargets };
+
+/*
+To use:
+mongoimport --uri mongodb+srv://jennycade:PASSWORD@cluster0.hhhey.mongodb.net/animle --collection targets --type json --file /Users/jennyzonka/Code/animle-backend/data/Ursidae_targets.json --jsonArray
+*/
