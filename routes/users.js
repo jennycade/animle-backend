@@ -7,7 +7,16 @@ const Target = require('../models/target');
 
 const userController = require('../controllers/userController');
 const gameController = require('../controllers/gameController');
-const animalController = require('../controllers/nodeController');
+const nodeController = require('../controllers/nodeController');
+
+router.get('/', async function(req, res, next) {
+  try {
+    const users = await User.find().exec();
+    res.json(users);
+  } catch (err) {
+    return next(err);
+  }
+});
 
 router.post('/', async function(req, res, next) {
   /*
@@ -103,8 +112,8 @@ router.get('/:userId/games/',
   }
 );
 
-router.post('/:userId/games/:gameId/guesses/:animalId',
-  animalController.validateObjectId,
+router.post('/:userId/games/:gameId/guesses/:nodeId',
+  nodeController.validateObjectId,
   gameController.validateObjectId,
   userController.validateObjectId,
   gameController.validateGameIsCurrent,

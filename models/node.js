@@ -2,22 +2,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const NodeSchema = new Schema({
-  parent: {
-    type: Schema.Types.ObjectId,
-    ref: 'Node',
-  },
+  _id: String,
+  parent: String,
   yearsSinceParent: {
     type: Number,
     min: 0,
   },
   lineage: [
     {
-      ancestor: {
-        type: String, 
-      },
-      yearsSinceAncestor: {
-        type: Number,
-      },
+      ancestor: String,
+      yearsSinceAncestor: Number,
     }
   ],
   isSpecies: Boolean,

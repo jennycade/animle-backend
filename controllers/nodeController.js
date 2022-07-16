@@ -1,8 +1,8 @@
 const Node = require('../models/node');
-const {validateObjectId} = require('../services/validateObjectId');
+const {validateUuid4} = require('../services/validateObjectId');
 
 exports.validateObjectId = (req, res, next) => {
-  const isValid = validateObjectId(req.params.nodeId);
+  const isValid = validateUuid4(req.params.nodeId);
   if (!isValid) {
     const err = new Error('Invalid node id');
     err.status = 400;
