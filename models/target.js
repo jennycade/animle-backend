@@ -5,6 +5,7 @@ const TargetSchema = new Schema({
   date: {
     type: String,
     index: true,
+    // TODO: add ISO regex match ####-##-##
   },
   node: {
     type: Schema.Types.ObjectId,
