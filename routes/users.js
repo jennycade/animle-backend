@@ -132,7 +132,9 @@ router.post('/:userId/games/:gameId/guesses/:nodeId',
     */
     try {
       // get the game. TODO: pull from res.locals
-      const game = await Game.findById(req.params.gameId).exec();
+      const game = await Game.findById(req.params.gameId)
+        .populate('target')
+        .exec();
       if (game.won) {
         const err = new Error('Game already won');
         err.status(400);
@@ -148,6 +150,16 @@ router.post('/:userId/games/:gameId/guesses/:nodeId',
       // TODO
 
       // find time since recent common ancestor
+      const guessNode = await Node.findById(req.params.animalId).exec();
+      if (!guessNode) {
+        const err = new Error('Invalid guess');
+        err.status = 404;
+        throw err;
+      }
+      const commonAncestor = nodeController.findCommonAncestor(
+        guessNode,
+        game.target
+      );
       // TODO
 
       // add to target cache

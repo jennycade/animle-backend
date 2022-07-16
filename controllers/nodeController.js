@@ -11,3 +11,11 @@ exports.validateObjectId = (req, res, next) => {
     next();
   }
 }
+
+exports.findCommonAncestor = (guessNode, targetNode) => {
+  // returns id of most common recent ancestor and years 
+  // separating the two nodes
+  // TODO
+  
+
+}
