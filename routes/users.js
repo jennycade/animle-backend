@@ -45,6 +45,7 @@ router.get('/:userId',
 router.get('/:userId/stats', async function(req, res, next) {
   /*
   returns user stats: # games played, % won, current streak, max streak, # guesses histogram
+  TODO
   */
   try {
     res.status(404).send();
@@ -67,10 +68,19 @@ router.get('/:userId/games/',
       // check for current game
       // current target
       const today = new Date();
+      const todayString = today.toISOString().slice(0, 10);
       const target = await Target.findOne({
-        date: `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`,
+        date: todayString,
       }).exec();
+      
+      if (!target) {
+        const err = new Error(`No target found for today (${todayString})`);
+        err.status = 404;
+        throw err;
+      }
+
       let game = await Game.findOne({
+        // TODO: fix error - TypeError: Game.findOne is not a function
         target: target._id,
         user: req.params.userId,
       }).exec();

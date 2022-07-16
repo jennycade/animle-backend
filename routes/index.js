@@ -3,13 +3,6 @@ var router = express.Router();
 
 var Node = require('../models/node');
 
-// routes
-// get gameboard state
-// post guess
-// log in
-// get user stats
-// get species list (for filterable list)
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.json({ name: 'Frodo' });

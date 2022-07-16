@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const TargetSchema = new Schema({
   date: {
-    type: Date,
+    type: String,
+    index: true,
   },
   node: {
     type: Schema.Types.ObjectId,
