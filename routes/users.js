@@ -9,6 +9,7 @@ const userController = require('../controllers/userController');
 const gameController = require('../controllers/gameController');
 const nodeController = require('../controllers/nodeController');
 
+// get all users - dev only
 router.get('/', async function(req, res, next) {
   try {
     const users = await User.find().exec();
@@ -18,18 +19,20 @@ router.get('/', async function(req, res, next) {
   }
 });
 
+// register new user
 router.post('/', async function(req, res, next) {
   /*
   creates user, returns {userId} and status 201
   */
   try {
     const user = await User.create({games: []});
-    res.status(201).json({userId: user._id});
+    res.status(201).json(user);
   } catch (err) {
     return next(err);
   }
 });
 
+// validate user
 router.get('/:userId',
   userController.validateObjectId,
   async function(req, res, next) {
@@ -63,6 +66,7 @@ router.get('/:userId/stats', async function(req, res, next) {
   }
 });
 
+// get today's game
 router.get('/:userId/games/', 
   userController.validateObjectId,
   async function(req, res, next) {
