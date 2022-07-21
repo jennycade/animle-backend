@@ -164,10 +164,16 @@ router.post('/:userId/games/:gameId/guesses/:nodeId',
         guessNode,
         game.target
       );
-      // TODO
 
       // add to target cache
       // TODO
+
+      // won?
+      if (commonAncestor.yearsSinceAncestor === 0) {
+        // TODO
+      }
+
+      res.json(commonAncestor);
       
     } catch (err) {
       return next(err);
