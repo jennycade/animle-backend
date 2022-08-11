@@ -4,13 +4,14 @@ var router = express.Router();
 const User = require('../models/user');
 const Game = require('../models/game');
 const Target = require('../models/target');
+const Node = require('../models/node');
 
 const userController = require('../controllers/userController');
 const gameController = require('../controllers/gameController');
 const nodeController = require('../controllers/nodeController');
 
 // get all users - dev only
-router.get('/', async function(req, res, next) {
+router.get('/', async function (req, res, next) {
   try {
     const users = await User.find().exec();
     res.json(users);
@@ -20,12 +21,12 @@ router.get('/', async function(req, res, next) {
 });
 
 // register new user
-router.post('/', async function(req, res, next) {
+router.post('/', async function (req, res, next) {
   /*
   creates user, returns {userId} and status 201
   */
   try {
-    const user = await User.create({games: []});
+    const user = await User.create({ games: [] });
     res.status(201).json(user);
   } catch (err) {
     return next(err);
@@ -33,9 +34,10 @@ router.post('/', async function(req, res, next) {
 });
 
 // validate user
-router.get('/:userId',
+router.get(
+  '/:userId',
   userController.validateObjectId,
-  async function(req, res, next) {
+  async function (req, res, next) {
     /*
     check for valid userId
     returns 204 (user found) or 404 (user not found)
@@ -54,7 +56,7 @@ router.get('/:userId',
   }
 );
 
-router.get('/:userId/stats', async function(req, res, next) {
+router.get('/:userId/stats', async function (req, res, next) {
   /*
   returns user stats: # games played, % won, current streak, max streak, # guesses histogram
   TODO
@@ -67,9 +69,10 @@ router.get('/:userId/stats', async function(req, res, next) {
 });
 
 // get today's game
-router.get('/:userId/games/', 
+router.get(
+  '/:userId/games/',
   userController.validateObjectId,
-  async function(req, res, next) {
+  async function (req, res, next) {
     /*
     check server time and user’s game. return info to populate gameboard:
     - already won
@@ -85,7 +88,7 @@ router.get('/:userId/games/',
       const target = await Target.findOne({
         date: todayString,
       }).exec();
-      
+
       if (!target) {
         const err = new Error(`No target found for today (${todayString})`);
         err.status = 404;
@@ -116,13 +119,14 @@ router.get('/:userId/games/',
   }
 );
 
-router.post('/:userId/games/:gameId/guesses/:nodeId',
+router.post(
+  '/:userId/games/:gameId/guesses/:nodeId',
   nodeController.validateObjectId,
   gameController.validateObjectId,
   userController.validateObjectId,
   gameController.validateGameIsCurrent,
 
-  async function(req, res, next) {
+  async function (req, res, next) {
     /*
     respond with:
     - error:
@@ -142,19 +146,35 @@ router.post('/:userId/games/:gameId/guesses/:nodeId',
       if (game.won) {
         const err = new Error('Game already won');
         err.status(400);
-        throw(err);
+        throw err;
       }
-      if (game.guesses.some((guess) => guess.animal === req.params.animalId)) {
+      if (game.guesses.some((guess) => guess.node === req.params.nodeId)) {
         const err = new Error('Species already guessed');
         err.status(400);
-        throw(err);
+        throw err;
+      }
+      // console.log(`Found game for ${game.target.date}`);
+      // console.log(`Target node: ${game.target.node}`);
+
+      // const target = await Target.findById(game.target._id).exec();
+      // console.log(`Target`);
+      // console.table(target);
+
+      // get target node
+      // TODO: get this with deep populate
+      // https://mongoosejs.com/docs/populate.html#deep-populate
+      const targetNode = await Node.findById(game.target.node).exec();
+      if (!targetNode) {
+        const err = new Error('Invalid target');
+        err.status = 500;
+        throw err;
       }
 
       // check cache in target
       // TODO
 
       // find time since recent common ancestor
-      const guessNode = await Node.findById(req.params.animalId).exec();
+      const guessNode = await Node.findById(req.params.nodeId).exec();
       if (!guessNode) {
         const err = new Error('Invalid guess');
         err.status = 404;
@@ -162,7 +182,7 @@ router.post('/:userId/games/:gameId/guesses/:nodeId',
       }
       const commonAncestor = nodeController.findCommonAncestor(
         guessNode,
-        game.target
+        targetNode
       );
 
       // add to target cache
@@ -174,7 +194,6 @@ router.post('/:userId/games/:gameId/guesses/:nodeId',
       }
 
       res.json(commonAncestor);
-      
     } catch (err) {
       return next(err);
     }

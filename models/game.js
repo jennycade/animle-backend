@@ -19,15 +19,15 @@ const GameSchema = new Schema({
   guesses: [
     {
       node: {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: 'Node',
         required: true,
       },
       yearsSinceLastCommonAncestor: {
         type: Number,
         min: 0,
-      }
-    }
+      },
+    },
   ],
 });
 
