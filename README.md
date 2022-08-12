@@ -146,7 +146,7 @@ example:
 
 // TODO
 
-###
+### Routes to (probably) eliminate
 
 - `/` GET
 - `/guess` POST
